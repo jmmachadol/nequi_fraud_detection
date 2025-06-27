@@ -34,9 +34,7 @@ pip install -r requirements.txt
 ## 4. Ejecución
 
 1. Colocar los Parquet originales en `data/`
-2. Ejecutar `notebooks/01_eda.ipynb`.
-3. Ejecutar `notebooks/02_feature_eng.ipynb`; se generarán artefactos en `artifacts/`.
-4. (Próximo) Ejecutar `03_modelado.ipynb` para obtener el ranking de riesgo.
+2. Ejecutar `notebooks/nequi_prueba_tecnica.ipynb`.
 
 ## 5. Estructura
 
