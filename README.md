@@ -19,7 +19,7 @@ Diseñar un *pipeline* reproducible que:
 | **Ingeniería de datos** | Ingesta Parquet, validación de esquema, manejo de duplicados y tipos. |
 | **Análisis exploratorio** | Estadísticos robustos, segmentaciones y visualizaciones en `01_eda.ipynb`. |
 | **Feature Engineering** | Ventanas móviles 1 h / 6 h / 24 h, banderas de duplicado semántico. |
-| **Modelado analítico** | *(Próximo notebook 03)* Isolation Forest y LOF con validación temporal. |
+| **Modelado analítico** | Isolation Forest y LOF con validación temporal. |
 | **Buenas prácticas** | Código modular, tipado de datos, `.gitignore`, requisitos explícitos. |
 | **Comunicación** | Markdown técnico y conclusiones cuantitativas. |
 
