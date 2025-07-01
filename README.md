@@ -65,4 +65,10 @@ README.md
 *Las 15 variables con mayor impacto se concentran en sumas de monto y conteos
 en 24 h/1 h, validando la hipótesis de fraccionamiento.*
 
+## IMPORTANTE
+
+Dado lo pesado que resulta cargar el archivo sample_data_0006_part_00.parquet enviado para la prueba, debe de descargarse y ejecutarse en el mismo repositorio donde queden alojado los notebooks para su correcto funcionamiento. Igualmente, en la carpeta 'cache' se generan dos archivos 'df_clean.parquet' y 'df_features.parquet' al momento de ejecutar los códigos en orden. Finalmente, tras la ejecución también se crearán los modelos en la carpeta 'artifacts' > 'if100.joblib'; 'pca10.joblib'; 'scores_if100.parquet'; 'scores_pca10.parquet'. 
+
+Todo esto dado que debido al peso de cada uno de los archivos no se permitió cargarlos directamente a este repositorio.
+
 © 2025 – MIT License
