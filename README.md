@@ -55,19 +55,7 @@ README.md
 
 ---
 
-## 5. Instrucciones (uso vía interfaz web de GitHub)
-
-1. Pulsa **Add file → Upload files** y sube:
-
-   * `data/sample_data_0006_part_00.parquet`
-   * carpeta `notebooks/` ejecutada
-   * carpetas `src/`, `cache/`, `artifacts/`
-2. Crea **README.md** y **requirements.txt** desde “Create new file”.
-3. (Opc.) Abre Codespaces o Binder para ejecutar en la nube.
-
----
-
-## 6. Resultados principales
+## 5. Resultados principales
 
 | Modelo                     | Threshold Top 0.1 % | Tiempo de entrenamiento | Interpretabilidad     |
 | -------------------------- | ------------------- | ----------------------- | --------------------- |
@@ -77,50 +65,4 @@ README.md
 *Las 15 variables con mayor impacto se concentran en sumas de monto y conteos
 en 24 h/1 h, validando la hipótesis de fraccionamiento.*
 
----
-
-## 7. Flujo operativo propuesto
-
-![Arquitectura](artifacts/architecture.png)
-
-* **Airflow** orquesta las etapas; el retrain es semanal.
-* Scores ≥ 0.59 (≈ 1 %) se envían al motor antifraude; 0.53-0.59 a auditoría.\*
-
----
-
-## 8. Próximas acciones
-
-* Incorporar etiqueta `tx_cancelled` para medir *precision/recall* reales.
-* Monitorizar deriva de `z_amt_7d` y `hour_int`; retrain si KS > 0.15.
-* Exponer el modelo como micro-servicio FastAPI con explicación SHAP en línea.
-
----
-
 © 2025 – MIT License
-
-```
-```
-
-## requirements.txt
-
-```text
-pandas>=2.0
-numpy>=1.24
-scikit-learn>=1.3
-shap>=0.43
-matplotlib>=3.8
-joblib>=1.3
-loguru>=0.7
-```
-
-```
-
-Copia cada bloque en la interfaz web de GitHub:
-
-1. **README.md**  
-   *“Add file → Create new file → README.md”* → pega el contenido → *Commit*.  
-2. **requirements.txt**  
-   Repite el proceso para el archivo de dependencias.
-
-Sin necesidad de usar `git` local.
-```
