@@ -1,4 +1,3 @@
-````markdown
 # Detección de Fraccionamiento Transaccional  
 **Prueba Técnica – Nequi**
 
